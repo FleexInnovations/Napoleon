@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Forms & Input</title>
+</head>
+<body>
+    <!--Form Action-->
+    <form action="process.php"></form>
+    <!--Name input-->
+    <div>
+        <label for="Name">Enter Your Name:</label><br><br>
+        <input type="text" placeholder="Enter Your Name" id="name" name="name"><br>
+    </div>
+
+    <!--E-mail input-->
+    <div>
+        <label for=E-mail>Enter Your E-mail:</label> <br><br>
+        <input type="email" placeholder="enter your email address" id="email" name="email"><br>
+    </div>
+
+    <!--Password input-->
+    <div>
+        <label for="password" aria-required="">Enter Your Password:</label> <br><br>
+        <input type="password" placeholder="enter your password" id="password" name="password"><br>
+    </div>
+
+    <!--message (textarea)-->
+    <div>
+        <label for="message">Enter Your Comment</label><br><br>
+        <textarea name="message" id="message" placeholder="Drop Your Message" cols="50" rows="5"></textarea><br><br>
+    </div>
+
+    <!--select (Gender)-->
+    <div>
+        <label for="sex">Gender</label>
+        <select name="sex" id="sex" aria-placeholder="click">
+        <option value="male">Male</option> 
+        <option value="Female">Female</option>
+        <option value="Others">Custom</option><br>
+    </div><br><br>
+    
+    <!-- Date of Birth-->
+    <div>
+        <label for="date">Date of Birth</label>
+        <input type="date" name="date" id="D.O.B" placeholder="D.O.B"><br>
+    </div>
+    <br><br>
+    <!-- select Disabled -->
+    <select name="month" id="month">
+        <option Disabled>Pick a Month</option>
+        <option>January</option>
+        <option>February</option>
+        <option selected>March</option>
+        <option>April</option>
+        <option>may</option>
+        <option>June</option>
+        <option>July</option>
+        <option>August</option>
+        <option>September</option>
+        <option>October</option>
+        <option>November</option>
+        <option>December</option>
+    </select>
+    <br><br>
+    <!-- checkbox -->
+    <label for="Telephone">Telephone</label><br>
+    <input type="number" name="Telephone" id="Telephone" placeholder="Enter your Number"><br>
+    <br>
+    <label for="Products">Product I Like</label>
+    <input type="checkbox" name="Product" value="Versace" id="Product">Versace
+    <input type="checkbox" name="product" id="product" value="Gucci">Gucci
+    <input type="checkbox" name="product" id="product" value="Fendi"> Fendi
+    <input type="checkbox" name="product" id="product" value="Armani">Armani
+     <br><br>
+     <!-- Radio -->
+     <label for="Satisfaction">Grade The Product</label>
+     <input type="radio" name="Grade" id="Grade" value="Fair">Fair <br>
+     <input type="radio" name="Grade" id="Grade" value="Good">Good<br>
+     <input type="radio" name="Grade" id="Grade" value="Better">Better <br>
+     <input type="radio" name="Grade" id="Grade" value="Best">Best<br>
+<br>
+<!--Input submit-->
+<input type="Submit" name="" id="submit" value="Continue">
+<!-- input button-->
+<input type="Reset" name="" id="Reset" value="Clear">
+
+
+</body>
+
+</html>
